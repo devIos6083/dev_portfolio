@@ -22,8 +22,12 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
+    <nav>
+      <%= link_to "Home", root_path%>
+      <%= link_to "About", about_path%>
+      <%= link_to "マイポートフォリオ", "/portfolio/devIos6083"%>
+    </nav>
     <%= yield %>
   </body>
 </html>

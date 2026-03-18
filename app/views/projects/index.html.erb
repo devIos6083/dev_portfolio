@@ -1,0 +1,9 @@
+<h1>プロジェクト一覧</h1>
+<%= link_to "新規プロジェクト登録", new_project_path %>
+<% @projects.each do |project| %>
+  <div>
+    <%= link_to project.title, project %>
+    <p><%= project.description %></p>
+  </div>
+<% end %>
+

@@ -1,0 +1,5 @@
+<h1><%= @project.title %></h1>
+<p><%= @project.description %></p>
+<%= link_to "GitHubを見(み)る", @project.github_url if @project.github_url.present? %>
+<%= link_to "デモを見(み)る", @project.demo_url if @project.demo_url.present? %>
+<%= link_to "一覧(いちらん)に戻(もど)る", projects_path %>

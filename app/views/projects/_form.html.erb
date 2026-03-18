@@ -1,0 +1,16 @@
+<%= form_with model: @project do |f| %>
+  <%= f.label :title, "タイトル" %>
+  <%= f.text_field :title %>
+  <%= f.label :description, "説明" %>
+  <%= f.text_area :description %>
+  <%= f.label :github_url, "Github url" %>
+  <%= f.url_field :github_url %>
+  <%= f.label :demo_url, "デモurl" %>
+  <%= f.url_field :demo_url %>
+  <%= f.label :thumbnail, "サムネイル URL" %>
+  <%= f.url_field :thumbnail %>
+  <%= f.submit "保存する"%>
+<% end %>
+
+
+

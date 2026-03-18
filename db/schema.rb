@@ -10,5 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 0) do
+ActiveRecord::Schema[8.1].define(version: 2026_03_18_120046) do
+  create_table "projects", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "demo_url"
+    t.text "description"
+    t.string "github_url"
+    t.integer "likes_count", default: 0
+    t.string "thumbnail"
+    t.string "title"
+    t.datetime "updated_at", null: false
+    t.integer "view_count", default: 0
+  end
 end
